@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Possibilities Tech & Media Services — Expert Laptop Repairs in Ghana</title>
+  <meta name="description" content="Professional laptop repair services in Accra, Ghana. Virus removal, screen replacement, battery repair, and more. Fast, affordable, and reliable." />
+  <meta name="keywords" content="laptop repair Ghana, laptop service Accra, computer repair Ghana, motherboard repair, battery replacement Ghana" />
+  <meta name="author" content="Possibilities Tech & Media Services" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Possibilities Tech & Media Services — Laptop Repairs" />
+  <meta property="og:description" content="Expert laptop repair services in Ghana. Get your device fixed fast with genuine parts and warranty." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta property="og:image" content="https://yourwebsite.com/og-laptop.jpg" />
+  <link rel="canonical" href="https://yourwebsite.com" />
+  <style>
+    :root {
+      --bg: #f8fafc; /* Light background */
+      --card: #ffffff; /* White cards */
+      --muted: #64748b; /* Muted text */
+      --primary: #1e293b; /* Dark slate - headers */
+      --secondary: #3b82f6; /* Blue - accents */
+      --accent: #10b981; /* Green - CTAs */
+      --neutral: #e2e8f0; /* Grey - borders */
+      --shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      --radius: 12px;
+      --transition: 0.3s ease;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--primary); line-height: 1.6; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+    header { background: var(--card); box-shadow: var(--shadow); position: sticky; top: 0; z-index: 20; }
+    .header-top { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+    .brand { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+    .cta { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: var(--accent); color: white; text-decoration: none; border-radius: var(--radius); font-weight: 600; transition: var(--transition); }
+    .cta:hover { background: #059669; transform: translateY(-1px); }
+    /* Navigation */
+    nav { background: var(--primary); color: white; }
+    .nav-list { display: flex; list-style: none; margin: 0; padding: 0; }
+    .nav-list li a { display: block; padding: 1rem 1.5rem; color: white; text-decoration: none; font-weight: 500; transition: var(--transition); }
+    .nav-list li a:hover, .nav-list li a.active { background: rgba(255, 255, 255, 0.1); }
+    /* Hero */
+    .hero { background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%); color: white; padding: 4rem 0; text-align: center; }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.25rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: white; color: var(--primary); text-decoration: none; font-weight: 600; border-radius: var(--radius); box-shadow: var(--shadow); transition: var(--transition); }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); }
+    .btn-secondary { background: transparent; border: 2px solid white; color: white; }
+    .btn-secondary:hover { background: white; color: var(--primary); }
+    /* Sections */
+    section { padding: 4rem 0; }
+    .section-title { text-align: center; margin-bottom: 3rem; }
+    .section-title h2 { font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem; }
+    .section-title p { font-size: 1.1rem; color: var(--muted); max-width: 600px; margin: 0 auto; }
+    .grid { display: grid; gap: 2rem; }
+    .services-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .card { background: var(--card); padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow); transition: var(--transition); }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); }
+    .card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary); }
+    .card ul { list-style: none; }
+    .card li { padding: 0.5rem 0; border-bottom: 1px solid var(--neutral); }
+    .card li:last-child { border-bottom: none; }
+    .criteria-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .criteria-card { text-align: center; }
+    .criteria-card h3 { color: var(--secondary); }
+    /* Common Problems */
+    .problems-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .problem-card { position: relative; padding: 1.5rem; border-left: 4px solid var(--accent); background: var(--card); border-radius: var(--radius); }
+    /* Prevention Tips */
+    .tips-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .tip-card { background: var(--card); padding: 1.5rem; border-radius: var(--radius); box-shadow: var(--shadow); }
+    /* Contact */
+    .contact-section { background: var(--primary); color: white; }
+    .contact-grid { grid-template-columns: 1fr 1fr; gap: 3rem; }
+    .contact-card { background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: var(--radius); }
+    form { display: flex; flex-direction: column; gap: 1rem; }
+    form input, form textarea, form select { padding: 1rem; border: none; border-radius: var(--radius); font-size: 1rem; }
+    form input:focus, form textarea:focus, form select:focus { outline: 2px solid var(--secondary); }
+    form button { padding: 1rem; background: var(--accent); color: white; border: none; border-radius: var(--radius); font-weight: 600; cursor: pointer; transition: var(--transition); }
+    form button:hover { background: #059669; }
+    footer { background: var(--primary); color: white; text-align: center; padding: 2rem 0; }
+    .footer-time { font-size: 0.9rem; margin-top: 0.5rem; }
+    /* Scroll to Top */
+    .scroll-top { position: fixed; bottom: 2rem; right: 2rem; background: var(--accent); color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.5rem; cursor: pointer; opacity: 0; visibility: hidden; transition: var(--transition); }
+    .scroll-top.show { opacity: 1; visibility: visible; }
+    /* Animations */
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .card { animation: fadeInUp 0.6s ease forwards; }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .section-title h2 { font-size: 2rem; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .nav-list { flex-direction: column; }
+      .nav-list li a { padding: 1rem; text-align: center; }
+      .scroll-top { bottom: 1rem; right: 1rem; width: 40px; height: 40px; font-size: 1.2rem; }
+    }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <div class="brand">Possibilities Tech & Media Services</div>
+        <a href="tel:+233248184054" class="cta">Call Now: +233 24 818 4054</a>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Laptop Repairs</a></li>
+          <li><a href="#problems">Common Issues</a></li>
+          <li><a href="#prevention">Prevention Tips</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Expert Laptop Repair Services in Ghana</h1>
+      <p>Fast, reliable, and affordable laptop repairs in Accra. From virus removal to screen replacement, we fix it all with genuine parts and warranty.</p>
+      <div class="buttons">
+        <a href="#services" class="btn">Get Quote Now</a>
+        <a href="#contact" class="btn btn-secondary">Book Service</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Premium Laptop Repair Services</h2>
+        <p>We provide comprehensive laptop repair solutions with detailed attention to your device's health. All services include warranty.</p>
+      </div>
+      <div class="grid services-grid">
+        <div class="card">
+          <h3>Virus & Malware Removal</h3>
+          <ul>
+            <li>Complete system scan & cleanup</li>
+            <li>Antivirus installation & configuration</li>
+            <li>Data recovery & backup</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Hardware Repairs</h3>
+          <ul>
+            <li>Motherboard repair & replacement</li>
+            <li>Screen & keyboard replacement</li>
+            <li>Battery & charging port repair</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Performance Upgrades</h3>
+          <ul>
+            <li>RAM & SSD upgrades</li>
+            <li>OS reinstallation & optimization</li>
+            <li>Cleaning & thermal paste replacement</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Software Solutions</h3>
+          <ul>
+            <li>Driver updates & troubleshooting</li>
+            <li>BIOS updates & configuration</li>
+            <li>Remote diagnostics & support</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Data Services</h3>
+          <ul>
+            <li>Data backup & migration</li>
+            <li>Hard drive recovery</li>
+            <li>Cloud setup & transfer</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Maintenance</h3>
+          <ul>
+            <li>Deep cleaning & maintenance</li>
+            <li>Fan & cooling system repair</li>
+            <li>Full system diagnostics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="criteria">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose Us for Laptop Repairs?</h2>
+        <p>Discover what makes Possibilities Tech & Media Services the top choice for laptop repairs in Ghana.</p>
+      </div>
+      <div class="grid criteria-grid">
+        <div class="criteria-card card">
+          <h3>✓ Trusted Reputation</h3>
+          <p>Years of experience serving customers across Ghana with 5-star reviews and recommendations.</p>
+        </div>
+        <div class="criteria-card card">
+          <h3>💰 Transparent Pricing</h3>
+          <p>Affordable rates with no hidden fees. Get a free quote before we start any work.</p>
+        </div>
+        <div class="criteria-card card">
+          <h3>⚡ Fast Turnaround</h3>
+          <p>Most repairs completed within 24-48 hours. Same-day service for simple fixes.</p>
+        </div>
+        <div class="criteria-card card">
+          <h3>🛡️ Full Warranty</h3>
+          <p>90-day warranty on parts and labor. Peace of mind with every repair.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="problems">
+    <div class="container">
+      <div class="section-title">
+        <h2>Common Laptop Problems We Fix</h2>
+        <p>From screen cracks to slow performance, we handle all major laptop issues with expert precision.</p>
+      </div>
+      <div class="grid problems-grid">
+        <div class="problem-card card">
+          <h3>Screen Damage</h3>
+          <p>Cracked screens, dead pixels, or display issues fixed with genuine replacements.</p>
+        </div>
+        <div class="problem-card card">
+          <h3>Battery Failures</h3>
+          <p>Short battery life or complete failure? We replace with high-quality batteries.</p>
+        </div>
+        <div class="problem-card card">
+          <h3>Overheating</h3>
+          <p>Cleaning fans, replacing thermal paste, and improving cooling systems.</p>
+        </div>
+        <div class="problem-card card">
+          <h3>Software Issues</h3>
+          <p>Virus removal, OS reinstallation, and driver troubleshooting.</p>
+        </div>
+        <div class="problem-card card">
+          <h3>Slow Performance</h3>
+          <p>Upgrades, cleanup, and optimization to make your laptop run like new.</p>
+        </div>
+        <div class="problem-card card">
+          <h3>Hard Drive Failure</h3>
+          <p>Data recovery and SSD replacement to restore your important files.</p>
+        </div>
+        <div class="problem-card card">
+          <h3>Broken Hinges</h3>
+          <p>Professional hinge repair to restore your laptop's structure.</p>
+        </div>
+        <div class="problem-card card">
+          <h3>Wi-Fi Issues</h3>
+          <p>Adapter replacement and network troubleshooting for stable connectivity.</p>
+        </div>
+        <div class="problem-card card">
+          <h3>Touchpad Problems</h3>
+          <p>Repair or replacement of touchpads for smooth navigation.</p>
+        </div>
+        <div class="problem-card card">
+          <h3>USB Port Failure</h3>
+          <p>Fixing or replacing USB ports for all your peripheral needs.</p>
+        </div>
+        <div class="problem-card card">
+          <h3>Charging Issues</h3>
+          <p>Port repair, adapter testing, and power system diagnostics.</p>
+        </div>
+        <div class="problem-card card">
+          <h3>Fan Overload</h3>
+          <p>Cleaning and replacement to prevent overheating and noise.</p>
+        </div>
+        <div class="problem-card card">
+          <h3>Keyboard Malfunctions</h3>
+          <p>Key replacement, cleaning, or full keyboard swap.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prevention">
+    <div class="container">
+      <div class="section-title">
+        <h2>How to Prevent Laptop Damage</h2>
+        <p>Follow these expert tips to extend your laptop's life and avoid costly repairs.</p>
+      </div>
+      <div class="grid tips-grid">
+        <div class="tip-card card">
+          <h3>Periodic Maintenance</h3>
+          <p>Keep ports, fans, and cooling surfaces dust-free to prevent overheating.</p>
+        </div>
+        <div class="tip-card card">
+          <h3>Use a Laptop Stand</h3>
+          <p>Elevate your laptop for better airflow and reduced heat buildup.</p>
+        </div>
+        <div class="tip-card card">
+          <h3>Carry with Care</h3>
+          <p>Use padded bags to protect against impacts during transport.</p>
+        </div>
+        <div class="tip-card card">
+          <h3>Surge Protection</h3>
+          <p>Plug into surge protectors to avoid voltage fluctuation damage.</p>
+        </div>
+        <div class="tip-card card">
+          <h3>Safe Software Downloads</h3>
+          <p>Only download from trusted sources to avoid viruses and malware.</p>
+        </div>
+        <div class="tip-card card">
+          <h3>Power Down Properly</h3>
+          <p>Shut down completely when not in use to save power and reduce heat.</p>
+        </div>
+        <div class="tip-card card">
+          <h3>Regular Backups</h3>
+          <p>Backup files to external drives or cloud to prevent data loss.</p>
+        </div>
+        <div class="tip-card card">
+          <h3>Update Drivers & Software</h3>
+          <p>Keep everything updated to avoid performance issues and security risks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-professional" class="contact-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose Professional Laptop Repairs?</h2>
+        <p>DIY repairs can cause more harm. Trust our experts for reliable results.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Expert Diagnosis</h3>
+          <p>Our technicians identify root causes to prevent future issues.</p>
+        </div>
+        <div class="card">
+          <h3>Genuine Parts</h3>
+          <p>We use only high-quality, original components for lasting repairs.</p>
+        </div>
+        <div class="card">
+          <h3>Service Warranty</h3>
+          <p>90-day guarantee on all work, giving you complete peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Get Your Laptop Repaired Today</h2>
+        <p>Contact us for fast, professional service. Free diagnostics available.</p>
+      </div>
+      <div class="grid contact-grid">
+        <div class="contact-card">
+          <h3>Service Information</h3>
+          <ul>
+            <li><strong>Location:</strong> Accra, Ghana</li>
+            <li><strong>Phone:</strong> <a href="tel:+233248184054">+233 24 818 4054</a></li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/233248184054" target="_blank">Chat Now</a></li>
+            <li><strong>Email:</strong> <a href="mailto:enochba26@gmail.com">enochba26@gmail.com</a></li>
+            <li><strong>Hours:</strong> Mon-Sat, 9AM-6PM</li>
+          </ul>
+          <a href="tel:+233248184054" class="btn">Call Us</a>
+        </div>
+        <div class="contact-card">
+          <h3>Quick Repair Request</h3>
+          <form id="repairForm">
+            <input type="text" placeholder="Your Name" required />
+            <input type="tel" placeholder="Phone Number" required />
+            <select required>
+              <option value="">Select Issue</option>
+              <option>Screen Damage</option>
+              <option>Battery Issue</option>
+              <option>Overheating</option>
+              <option>Software Problem</option>
+              <option>Slow Performance</option>
+              <option>Other</option>
+            </select>
+            <textarea placeholder="Describe your problem" rows="4" required></textarea>
+            <button type="submit">Send Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Possibilities Tech & Media Services — All rights reserved. | Accra, Ghana</p>
+      <div class="footer-time" id="currentTime"></div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" title="Back to Top">↑</button>
+
+  <script>
+    // WhatsApp Form Submission
+    const WHATSAPP_NUMBER = '233248184054';
+    const repairForm = document.getElementById('repairForm');
+    repairForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = this.querySelector('input[type="text"]').value.trim();
+      const phone = this.querySelector('input[type="tel"]').value.trim();
+      const issue = this.querySelector('select').value;
+      const message = this.querySelector('textarea').value.trim();
+      if (!name || !phone || !issue) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+      const text = `Hello, my name is ${name}. I need help with: ${issue}. My phone: ${phone}. Details: ${message || 'No additional details.'}`;
+      const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+      window.open(whatsappUrl, '_blank');
+      this.reset();
+      alert('Request sent successfully! We will contact you soon via WhatsApp.');
+    });
+
+    // Real-time Date and Time
+    function updateTime() {
+      const now = new Date();
+      const timeElement = document.getElementById('currentTime');
+      const options = { timeZone: 'GMT', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+      const timeString = now.toLocaleString('en-US', options).replace(' ', ' at ');
+      timeElement.textContent = `Current Time: ${timeString} GMT`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime(); // Initial call
+
+    // Scroll to Top Button
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.add('show');
+      } else {
+        scrollTopBtn.classList.remove('show');
+      }
+    });
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Smooth Navigation with Active Highlight
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-list li a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionBottom = sectionTop + section.offsetHeight;
+        if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').substring(1) === current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Smooth Scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
